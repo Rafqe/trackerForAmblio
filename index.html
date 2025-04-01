@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amblyopia Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Registration Screen -->
+    <div id="registration-screen" class="screen">
+        <h1>Amblyopia Tracker</h1>
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+        </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen hidden">
+        <h1>Amblyopia Tracker</h1>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+        </div>
+    </div>
+
+    <!-- Tracking Screen -->
+    <div id="tracker-screen" class="screen hidden">
+        <h1>Amblyopia Tracker</h1>
+        <div class="welcome-message">
+            <h2>Welcome, <span id="user-name"></span>!</h2>
+        </div>
+        <div class="tracker-container">
+            <h2>Daily Tracking</h2>
+            <div class="date-display">
+                <p>Today: <span id="current-date"></span></p>
+            </div>
+            <div class="tracking-status">
+                <p>Today's Status: <span id="tracking-status" class="not-tracked">Not Tracked</span></p>
+            </div>
+            <button id="track-today" class="track-button">Log Today's Activity</button>
+            <div class="history-container">
+                <h3>Recent History</h3>
+                <ul id="tracking-history"></ul>
+            </div>
+        </div>
+        <button id="logout-btn" class="logout-button">Logout</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

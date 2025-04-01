@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.screen {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+}
+
+h1 {
+    color: #3a86ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3a86ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2a75e6;
+}
+
+a {
+    color: #3a86ff;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tracker-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.date-display {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.tracking-status {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.tracked {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.not-tracked {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.track-button {
+    background-color: #4caf50;
+}
+
+.track-button:hover {
+    background-color: #3d9740;
+}
+
+.track-button.disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.history-container {
+    margin-top: 30px;
+}
+
+#tracking-history {
+    list-style-type: none;
+}
+
+#tracking-history li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#tracking-history .tracked-day {
+    color: #4caf50;
+}
+
+#tracking-history .missed-day {
+    color: #f44336;
+}
+
+.logout-button {
+    background-color: #f44336;
+    margin-top: 30px;
+}
+
+.logout-button:hover {
+    background-color: #e53935;
+}
